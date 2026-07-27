@@ -49,7 +49,6 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 - **Data cleaning pipeline** — NULL handling, mixed date-format normalization, duplicate detection and removal, orphan foreign-key detection and cascading cleanup
 - **Star-schema dimension tables** — proper Power BI relationships instead of wide, denormalized, unrelated fact tables
-- **Auto-updating summary table** — a trigger on `supplier_performance_log` recalculates a supplier's reliability score (average lead time, standard deviation, coefficient of variation, on-time %) the moment a new delivery record is logged, backed by a stored procedure for full-table refresh
 - **Indexed for performance** — targeted indexes on all foreign-key and filter columns used across the reporting views
 - **5-page Power BI dashboard**:
   - **Supply Chain Logistic (Overview)** — top-line KPIs across the whole business
