@@ -1,0 +1,53 @@
+product_id,product_name,category,unit_cost,reorder_point
+1,Wireless Bluetooth Earbuds,Electronics,24.82,10
+2,USB-C Fast Charger,Electronics,433.51,50
+3,4K HDMI Cable,Electronics,178.92,-5
+4,Portable Power Bank 10000mAh,Electronics,305.35,20
+5,Smart LED Desk Lamp,Electronics,136.43,20
+6,Noise Cancelling Headphones,Electronics,421.74,10
+7,Bluetooth Speaker Mini,Electronics,,
+8,Cotton Bedsheet Set Queen,Textiles,158.71,-5
+9,Linen Table Runner,Textiles,133.91,50
+10,Microfiber Bath Towel,Textiles,215.36,20
+11,Wool Blanket Throw,Textiles,,10
+12,Silk Pillow Cover,Textiles,81.67,100
+13,Denim Fabric Roll,Textiles,498.07,10
+14,Canvas Tote Fabric,Textiles,59.05,-5
+15,Car Brake Pad Set,Automotive Parts,$148.16,-5
+16,Engine Oil Filter,Automotive Parts,133.17,10
+17,Windshield Wiper Blade,Automotive Parts,150.63,20
+18,LED Headlight Bulb,Automotive Parts,82.45,10
+19,Alloy Wheel Rim 16in,Automotive Parts,245.33,50
+20,Car Battery 12V,Automotive Parts,121.95,-5
+21,Spark Plug Set,Automotive Parts,36.47,20
+22,Men's Running Shoes,Footwear,473.53,
+23,Women's Leather Sandals,Footwear,107.48,20
+24,Kids Canvas Sneakers,Footwear,200.7,
+25,Waterproof Hiking Boots,Footwear,,10
+26,Formal Leather Loafers,footwear,116.6,-5
+27,Sports Ankle Socks Pack,footwear,,50
+28,Wooden Study Table,Furniture,120.53,20
+29,Ergonomic Office Chair,Furniture,441.43,100
+30,Foldable Bookshelf,Furniture,96.82,100
+31,Queen Size Bed Frame,Furniture,,-5
+32,3-Seater Fabric Sofa,Furniture,51.01,10
+33,Bedside Nightstand,Furniture,96.72,50
+34,Non-Stick Frying Pan,kitchenware,,
+35,Stainless Steel Cookware Set,Kitchenware,$326.77,10
+36,Ceramic Dinner Plate Set,Kitchenware,424.65,20
+37,Electric Kettle 1.5L,Kitchenware,$451.42,100
+38,Glass Food Storage Container,Kitchenware,392.47,-5
+39,Wooden Cutting Board,Kitchenware,278.77,50
+40,Building Blocks Set 200pc,toys,31.12,50
+41,Remote Control Car,toys,292.92,20
+42,Plush Teddy Bear Large,Toys,254.9,10
+43,Puzzle Game 500 Piece,Toys,119.13,20
+44,Kids Art Supply Kit,Toys,21.79,
+45,Leather Wallet Men,Fashion Accessories,467.48,20
+46,Sunglasses UV Protection,fashion accessories,67.18,10
+47,Analog Wrist Watch,Fashion Accessories,311.34,
+48,Canvas Backpack,Fashion Accessories,134.07,20
+49,Silk Scarf,Fashion Accessories,80.56,
+50,Leather Belt Formal,Fashion Accessories,403.94,
+11,Wool Blanket Throw,Textiles,,10
+26,Formal Leather Loafers,footwear,116.6,-5

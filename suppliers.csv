@@ -1,0 +1,13 @@
+supplier_id,supplier_name,country,contact_email,onboarded_date,supplier_tier
+1,Shenzhen Electronics Co,China,contact@shenzhen.com,13-04-2018, Backup 
+2,Berlin Precision GmbH,Germany,contact@berlin.com,24-02-2019,Preferred
+3,  Osaka Components Ltd  ,JAPAN,contact@osaka.com,25-09-2022,Strategic
+4,  Mumbai Textiles Pvt Ltd  ,INDIA,contact@mumbai.com,01-10-2024,Preferred
+5,Hanoi Textile Group,Vietnam,contact@hanoi.com,11-02-2024, Backup 
+6,Milano Fashion House,Italy,contact@milano.com,16-10-2019,Backup
+7,Seoul Semiconductor Inc,SOUTH KOREA,contact@seoul.com,10-10-2021,Preferred
+8,  Monterrey Auto Parts  ,Mexico,CONTACT@MONTERREY.COM,08-10-2024,Backup
+9,Dhaka Garments Ltd,Bangladesh,contact@dhaka.com,27-05-2019,strategic
+10,Chicago Steelworks,USA,CONTACT@CHICAGO.COM,21-01-2022,PREFERRED
+4,  Mumbai Textiles Pvt Ltd  ,INDIA,contact@mumbai.com,01-10-2024,Preferred
+7,Seoul Semiconductor Inc,,contact@seoul.com,10-10-2021,Preferred
