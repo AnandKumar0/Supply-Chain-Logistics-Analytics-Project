@@ -40,8 +40,8 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 ## Tech Stack
 
-- **PostgreSQL** — data cleaning, transformation, view design, indexing, triggers, and stored procedures
-- **Power BI + DAX** — interactive dashboard and measure logic
+- **PostgreSQL** — creating schemas, data cleaning, transformation, view design
+- **Power BI + DAX** — use direct query mode, measure logic and interactive dashboard 
 
 ---
 
@@ -62,7 +62,7 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 ## Key Insights
 
-- **Coefficient of Variation reveals a different risk ranking than raw standard deviation.** Milano Fashion House has a lower raw lead-time standard deviation than Hanoi Textile Group, but a *higher* Coefficient of Variation (77.65% vs 47.27%) — meaning Milano is proportionally the more unpredictable supplier once its shorter average lead time is accounted for.
+- **Coefficient of Variation reveals a different risk ranking than raw standard deviation.** Milano Fashion House records both the highest Coefficient of Variation (77.65%) and a higher lead-time standard deviation (16.25 days) than Hanoi Textile Group (47.27%, 11.72 days), reinforcing that Milano is the most unpredictable supplier.
 - **Supplier tier does not guarantee reliability.** Two "Strategic"-tier suppliers rank in the middle of the pack on both lead time and on-time delivery — tier alone is not a safe proxy for performance.
 - **Only ~50% of delivered orders have a logged performance record.** This coverage gap means on-time/late percentages must be computed against *logged* orders, not all orders, to avoid silently understating reliability.
 - **A handful of products show extreme cross-supplier price variance** (up to ~$498 difference for the same item), highlighting concrete renegotiation or re-sourcing opportunities.
@@ -81,7 +81,7 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 ## What This Project Demonstrates
 
-- Designing a layered SQL data warehouse (staging → master → analytics) instead of working out of a single flat schema
+- Designing a layered SQL data warehouse (staging → master → analytics) enabling data-driven purchasing decisions
 - Diagnosing and fixing real data-quality defects: NULL-handling bugs in percentage calculations, date-format ambiguity, duplicate rows at scale, and cascading referential-integrity issues
 - Building a proper Power BI star schema and understanding *why* missing relationships silently break slicers and charts
 - Automating a metric with PostgreSQL triggers and stored procedures rather than relying on manual refresh alone
