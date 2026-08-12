@@ -82,7 +82,7 @@ Power BI connects via DirectQuery/Import to the `analytics` views rather than ra
 
 ## Project Dashboard 
 
-![
+![Dashboard pdf](https://github.com/AnandKumar0/Supply-Chain-Logistics-Analytics-Project/blob/main/Supplly_Chain%20%26%20logistics_Project.pdf)
 
 
 ## Dashboard Structure (6 Pages)
