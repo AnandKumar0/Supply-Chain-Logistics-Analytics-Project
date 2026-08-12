@@ -1,14 +1,14 @@
 # Supply Chain & Logistics Analytics Project
 
-An end-to-end data analytics project that identifies unreliable suppliers, quantifies their downstream impact on inventory health, and tracks demand-forecast accuracy — built with **PostgreSQL** (data cleaning, modeling, automation) and **Power BI / DAX** (dashboarding).
+An end-to-end data analytics project that identifies unreliable suppliers, quantifies their downstream impact on inventory health, and tracks demand-forecast accuracy — built with **PostgreSQL** (data cleaning, modeling) and **Power BI / DAX** (dashboarding).
 
 ---
 
 ## Business Problem
 
-A retail company orders products from 10 different global suppliers. Some suppliers deliver in as little as 5 days; others take up to 45 days. Because delivery times are unpredictable, warehouses either run completely out of stock or become overcrowded with excess inventory.
+A retail company orders products from 10 different global suppliers. Some suppliers delivered earlier; others take up to many days. Because delivery times are unpredictable, warehouses either run completely out of stock or become overcrowded with excess inventory.
 
-The goal: build a data pipeline and dashboard that identifies **which suppliers are actually unreliable** — not just slow on average, but inconsistent — so the purchasing team can make evidence-based decisions instead of guessing.
+The goal: build a dashboard that identifies **which suppliers are actually unreliable** — not just slow on average, but inconsistent — so the purchasing team can make evidence-based decisions instead of guessing.
 
 ---
 
@@ -34,7 +34,7 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 `dim_suppliers` · `dim_products` · `dim_warehouses` — small, deduplicated lookup tables used to build proper star-schema relationships in Power BI, so slicers filter every connected report page consistently.
 
 ### Reporting Views (`analytics`)
-`vw_supplier_performance` · `vw_procurement_analysis` · `vw_inventory_analysis` · `vw_demand_analysis`
+`vw_supplier_performance` · `vw_supplier_performance_summary` · `vw_procurement_analysis` · `vw_inventory_analysis` · `vw_demand_analysis`
 
 ---
 
@@ -49,8 +49,7 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 - **Data cleaning pipeline** — NULL handling, mixed date-format normalization, duplicate detection and removal, orphan foreign-key detection and cascading cleanup
 - **Star-schema dimension tables** — proper Power BI relationships instead of wide, denormalized, unrelated fact tables
-- **Indexed for performance** — targeted indexes on all foreign-key and filter columns used across the reporting views
-- **5-page Power BI dashboard**:
+- **6-pages Power BI dashboard**:
   - **Supply Chain Logistic (Overview)** — top-line KPIs across the whole business
   - **Supplier Performance** — lead time, on-time %, late deliveries, by supplier and by tier
   - **Supplier Risk Analysis** — Coefficient of Variation ranking and a Low/Medium/High risk flag per supplier
@@ -69,8 +68,6 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 ---
 
-
-
 ---
 
 ## Dashboard Preview
@@ -84,5 +81,4 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 - Designing a layered SQL data warehouse (staging → master → analytics) enabling data-driven purchasing decisions
 - Diagnosing and fixing real data-quality defects: NULL-handling bugs in percentage calculations, date-format ambiguity, duplicate rows at scale, and cascading referential-integrity issues
 - Building a proper Power BI star schema and understanding *why* missing relationships silently break slicers and charts
-- Automating a metric with PostgreSQL triggers and stored procedures rather than relying on manual refresh alone
 - Translating a business problem (unpredictable suppliers → stockouts/overcrowding) into a specific, defensible statistical metric (Coefficient of Variation) rather than a naive one (raw standard deviation)
