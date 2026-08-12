@@ -1,10 +1,10 @@
 # Business Questions & SQL Queries
 
-This document contains all 65 analytical questions answered in this project, organized by module. Every query runs against the `analytics` schema views (`vw_supplier_performance`, `vw_procurement_analysis`, `vw_inventory_analysis`, `vw_demand_analysis`), which sit on top of the cleaned `master` schema tables.
+This document contains all business analytical questions answered in this project, organized by module. Every query runs against the `analytics` schema views (`vw_supplier_performance`, `vw_supplier_performance`, `vw_procurement_analysis`, `vw_inventory_analysis`, `vw_demand_analysis`), which sit on top of the cleaned `master` schema tables.
 
 ---
 
-## Module 1: Supplier Reliability & Performance
+## Supplier Reliability & Performance
 
 ### 1. Which suppliers deliver late most often?
 **Business Purpose:** Identify suppliers causing the highest number of delayed deliveries.
@@ -323,7 +323,7 @@ WHERE po_status IN ('Delivered', 'Partial', 'Pending');
 
 ---
 
-## Module 2: Procurement & Cost Analysis
+## Procurement & Cost Analysis
 
 ### 1. Which supplier has the highest procurement spend?
 **Business Purpose:** Identify suppliers contributing the highest procurement cost.
@@ -447,7 +447,7 @@ ORDER BY 3 DESC;
 
 ---
 
-## Module 3: Inventory Analysis
+## Inventory Analysis
 
 ### 1. Stockout Products (current status)
 **Business Purpose:** Identify products that are completely out of stock right now.
@@ -698,7 +698,7 @@ FROM analytics.vw_inventory_analysis;
 
 ---
 
-## Module 4: Demand Forecast Analysis
+## Demand Forecast Analysis
 
 ### 1. Forecast Error %
 **Business Purpose:** Measure how far off the forecast typically is from actual demand.
