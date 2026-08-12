@@ -61,8 +61,6 @@ This project uses a 3-layer schema design, mirroring standard data-warehouse pra
 
 # All Business Questions & SQL Queries
 
-This document contains all business analytical questions answered in this project, organized by module. Every query runs against the `analytics` schema views (`vw_supplier_performance`, `vw_supplier_performance`, `vw_procurement_analysis`, `vw_inventory_analysis`, `vw_demand_analysis`), which sit on top of the cleaned `master` schema tables.
-
 ---
 
 ## Supplier Reliability & Performance
